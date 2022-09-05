@@ -1,0 +1,18 @@
+{
+    "editor.tabSize": 2,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.insertFinalNewline": true,
+    "editor.rulers": [
+      80,
+      120
+    ],
+    "workbench.colorCustomizations": {
+      "editorRuler.foreground": "#b12744"
+    },
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.formatOnSave": true,
+    "editor.trimAutoWhitespace": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+    "editor.bracketPairColorization.enabled": true
+  }
