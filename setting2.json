@@ -1,0 +1,51 @@
+{
+    /* Vetur ->Start */
+    "vetur.ignoreProjectWarning": true, // 忽略警告提示: Vetur find tsconfig.json/jsconfig.json, but they aren’t in the project root.
+    "vetur.useWorkspaceDependencies": true, // 使用本项目的依赖版本
+    "vetur.validation.template": true, // vetur模板校验template/style/script,错误提示将来自 ESLint 插件eslint-plugin-vue，而不是 Vetur,确保项目或全局有安装ESLint相关插件
+    "vetur.validation.templateProps": true, // Prop属性校验,export default {  props: { str: String }}
+    "vetur.experimental.templateInterpolationService": true, // Vetur 现在提供完成、诊断、悬停、跳转到定义、查找这些 JavaScript 片段v-if等的API资料, 也可禁用模板诊断vetur.validation.interpolation: false
+    "vetur.validation.interpolation": false, // 不对新 TS 语法进行校验
+    "vetur.format.defaultFormatter.html": "prettier", //  Valid values: "none", "prettier", "js-beautify-html". 配置值范围取决于你当前编辑器所安装的格式化扩展程序，如js-beautify-html => Beautify 扩展程序
+    "vetur.format.defaultFormatter.pug": "prettier",
+    "vetur.format.defaultFormatter.css": "prettier",
+    "vetur.format.defaultFormatter.postcss": "prettier",
+    "vetur.format.defaultFormatter.scss": "prettier",
+    "vetur.format.defaultFormatter.less": "prettier",
+    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+    "vetur.format.defaultFormatter.js": "prettier",
+    "vetur.format.defaultFormatter.ts": "prettier",
+    "vetur.format.defaultFormatter.sass": "sass-formatter",
+    "vetur.format.options.tabSize": 2,
+    "vetur.format.options.useTabs": false, // 是否利用tab替代空格
+    "vetur.format.styleInitialIndent": true, // 对vue文件中的style是否统一缩进格式
+    "vetur.format.scriptInitialIndent": false, // 对vue文件中的script是否统一缩进格式
+    // 支持自定义块显示格式
+    "vetur.grammar.customBlocks": {
+        "docs": "md",
+        "i18n": "json"
+    },
+    // vetur格式 HTML 模板
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": { // 如果这里prettier不配置，则默认采用prettier的公共配置
+            "printWidth": 100,
+            "tabWidth": 2, // prettier的tabWidth未明确设置时，取"vetur.format.options.tabSize" （useTabs 工作方式相同）
+            "singleQuote": true, // 用单引号
+            "semi": false, // 不加分号
+            "trailingComma": "none", // 禁止末尾添加逗号
+            "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 函数括号前是否加空格
+            "typescript.format.insertSpaceBeforeFunctionParenthesis": true, // 函数括号前是否加空格
+            "arrowParens": "avoid" //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+        },
+        // Beautify 扩展程序
+        "js-beautify-html": {},
+        // 已弃用
+        "prettyhtml": {}
+    },
+    "[vue]": {
+        // 定义一个默认格式化程序, 该格式化程序优先于所有其他格式化程序设置。必须是提供格式化程序的扩展的标识符
+        "editor.defaultFormatter": "octref.vetur",
+        // "editor.formatOnSave": true, // 保存时是否自动格式化
+    },
+    /* Vetur ->End */
+}
