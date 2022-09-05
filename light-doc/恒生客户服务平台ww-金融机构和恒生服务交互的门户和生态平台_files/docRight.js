@@ -1,0 +1,2 @@
+/*!2019-12-03 */
+require(["domReady!","avalon","jquery","common/common","pager","jquery.cookie","header","docSearch"],function(a,b,c,d){b.define({$id:"docRight",cancelDocPop:function(){c(".doc-warn-pop,.doc-black-sheild").hide(),c("body").css("overflow","auto")},login:function(){c.cookie("_u_",window.location,{path:"/",expires:10});var a=window.location.href;d.ajax({url:"user/setUserBehavior.json",type:"get",data:{userBehavior:a},callback:function(a){window.location.href="/login/login.html"}})}});c(function(){}),b.scan()});
